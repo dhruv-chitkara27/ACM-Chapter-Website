@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://acm-compute.in/inaugration.php -->
+<html lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Basic Page Needs
+  ================================================== -->
+	
+	<title>Compute-2018</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+  	<link href="./Compute2_files/css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="./Compute2_files/style.css">
+	<link rel="stylesheet" href="./Compute2_files/jquery.bxslider.css">
+	<link rel="stylesheet" href="./Compute2_files/bootstrap-min.css">	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="./Compute2_files/hes-gallery.css">
+	  <link rel="stylesheet" href="./Compute2_files/style-gallery.css">
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- Favicons
+================================================== -->
+
+
+</head>
+<body>
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+<div style="background-color:#000;">
+<div class="container">
+<!--<div class="col-sm-2">
+	<div style="margin-top:5px;" class="logo">
+		<img src="images/acmindia.png">
+	</div>
+</div>-->
+<div class="col-sm-12">
+<nav class="navbar navbar-inverse">  
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="http://acm-compute.in/">Home</a></li>
+		 <li><a href="http://acm-compute.in/about-acm.php">About ACM</a></li>
+		 <li><a href="http://acm-compute.in/committee.php">Committees</a></li>
+		  <li><a href="http://acm-compute.in/speakers.php">Speakers</a></li>            
+        <li><a href="http://acm-compute.in/technical-program.php">Technical Program</a></li>
+		<li><a href="http://acm-compute.in/registration.php">Registrations</a></li>
+        <li><a href="http://acm-compute.in/travel-details.php">Travel &amp; Stay</a></li>
+         <li><a href="http://acm-compute.in/venue.php">Venue</a></li>
+          <li><a href="http://acm-compute.in/gallery.php">Gallery</a></li>
+          <li><a href="http://acm-compute.in/contact_us.php">Contact Us</a></li>
+		<!--<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Venue<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="venue.php">Venue</a></li>
+			<li><a href="contact_us.php">Contact Us</a></li>
+          </ul>
+        </li>-->
+      </ul>
+    </div>
+ 
+</nav>
+</div>
+<!--<div class="col-sm-2">
+	<div style="margin-top:15px;" class="logo">
+		<img src="images/logo.png">
+	</div>
+</div>-->
+</div>
+</div>
+
+<!--<div class="nav-bar">
+		<ul>
+			<li><a href="index.php">Home</a></li>
+			<li> About Compute
+				<!--<ul>
+					 <li><a href="http://pune.acm.org/ACMCompute2012/compute_2012_Home.htm">2012</a></li>
+					 <li><a href="https://sites.google.com/site/compute2013/">2013</a></li>
+					 <li><a href="http://compute2014.vnit.ac.in/">2014</a></li>
+					 <li><a href="http://www.acm-compute.in/2015">2015</a></li>
+					 <li><a href="http://www.acm-compute.in/2016">2016</a></li>	 
+				</ul>
+			 </li>
+			<li>
+			  <a href="#">Committee</a>
+				<ul>
+					<li><a href="committee.php">Committee</a></li>	
+				</ul>
+			</li>
+			<li><a href="technical-program.php">Technical Program</a></li>    	
+			<li><a href="travel-details.php">Travel & Stay</a></li>
+			<li class="nav-bar1">Venue</a>
+				<ul>   
+					 <li><a href="venue.php">Venue</a></li>		
+					 <li><a href="contact_us.php">Contact Us</a></li> 
+				</ul>
+			</li>
+		</ul>	
+	</div>-->
+
+
+
+<img src="./Compute2_files/Compute-inner.jpg">
+<div class="container">
+		
+	
+			<div class="col-sm-12 innercontent well-box">
+							<h2>inauguration</h2>	
+						   
+        <div class="hes-gallery">
+<img src="./Compute2_files/IMG_5607.jpg" alt="image1" data-fullsize="images/gallery/inauguration/IMG_5607.jpg" data-subtext="piesiak" data-alt="piesiak" onclick="HesGallery.show(0,0)"> 
+<img src="./Compute2_files/IMG_5610.jpg" alt="image1" data-fullsize="images/gallery/inauguration/IMG_5610.jpg" data-subtext="piesiak" data-alt="piesiak" onclick="HesGallery.show(0,1)"> 
+<img src="./Compute2_files/IMG_5614.jpg" alt="image1" data-fullsize="images/gallery/inauguration/IMG_5614.jpg" data-subtext="piesiak" data-alt="piesiak" onclick="HesGallery.show(0,2)"> 
+<img src="./Compute2_files/IMG_5628.jpg" alt="image1" data-fullsize="images/gallery/inauguration/IMG_5628.jpg" data-subtext="piesiak" data-alt="piesiak" onclick="HesGallery.show(0,3)"> 
+<img src="./Compute2_files/IMG_5631.jpg" alt="image1" data-fullsize="images/gallery/inauguration/IMG_5631.jpg" data-subtext="piesiak" data-alt="piesiak" onclick="HesGallery.show(0,4)"> 
+<img src="./Compute2_files/IMG_5696.jpg" alt="image1" data-fullsize="images/gallery/inauguration/IMG_5696.jpg" data-subtext="piesiak" data-alt="piesiak" onclick="HesGallery.show(0,5)">  
+<img src="./Compute2_files/IMG_5786.jpg" alt="image1" data-fullsize="images/gallery/inauguration/IMG_5786.jpg" data-subtext="piesiak" data-alt="piesiak" onclick="HesGallery.show(0,6)">  
+<img src="./Compute2_files/IMG_5792.jpg" alt="image1" data-fullsize="images/gallery/inauguration/IMG_5792.jpg" data-subtext="piesiak" data-alt="piesiak" onclick="HesGallery.show(0,7)">  
+<img src="./Compute2_files/IMG_5793.jpg" alt="image1" data-fullsize="images/gallery/inauguration/IMG_5793.jpg" data-subtext="piesiak" data-alt="piesiak" onclick="HesGallery.show(0,8)">  
+<img src="./Compute2_files/IMG_5794.jpg" alt="image1" data-fullsize="images/gallery/inauguration/IMG_5794.jpg" data-subtext="piesiak" data-alt="piesiak" onclick="HesGallery.show(0,9)">  
+
+			
+            
+        </div>
+  
+							
+			</div>
+</div>
+  <script src="./Compute2_files/hes-gallery.js.download"></script>
+    <script>
+
+        HesGallery.setOptions({
+            disableScrolling: false,
+            hostedStyles: false,
+            animations: true,
+            minResolution: 1000,
+
+            showImageCount: true,
+            wrapAround: true
+        });
+
+    </script>
+
+<div class="clr"></div>
+
+    <div class="footer">
+        Copyright © chitkara university
+    </div>
+
+
+
+	
+
+
+	<div id="hgallery" style="visibility:hidden;" class="open"><div id="hg-bg" onclick="HesGallery.hide()"></div><div id="hg-pic-cont" class="" data-subtext="piesiak" data-howmany="9/10"><img id="hg-pic" src="./Compute2_files/IMG_5793.jpg" alt="piesiak"><div id="hg-prev-onpic" onclick="HesGallery.prev()" class=""></div><div id="hg-next-onpic" onclick="HesGallery.next()" class=""></div></div><button id="hg-prev" onclick="HesGallery.prev()" class=""></button><button id="hg-next" onclick="HesGallery.next()" class=""></button></div></body></html>

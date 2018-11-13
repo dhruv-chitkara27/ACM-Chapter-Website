@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>COMPUTE 2018</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="slideshow.css">
+<style>
+
+* {
+    box-sizing: border-box;
+}.column {
+float: left;
+   
+ padding:5px   
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Column container */
+.row {  
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+.col {
+    margin-right: 150px;
+}
+p {
+    font-size: 17px;
+font-family: Arial, Helvetica, sans-serif;
+text-align: justify;
+letter-spacing: 1px;
+}
+ul{font-size: 17px;
+font-family: Arial, Helvetica, sans-serif;
+
+    text-align: justify;
+    letter-spacing: 1px;}
+
+
+
+body {
+ background-image: url('bg9.jpg');
+height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+background-color: rgba(255,255,255,0.5);
+background-blend-mode: lighten;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.responsive {
+    width: 100%;
+    max-width: 1351px;
+    height: auto;
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+<img src="Compute-inner.jpg" width="1351" class="responsive">
+<br>
+<br>
+<br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="IMG_5605.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="IMG_5614.jpg" style="width:100%">
+ 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="IMG_5731.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="IMG_5786.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="_DSC1106.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="IMG_5744.jpg" style="width:100%">
+  
+</div>
+
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span> 
+<span class="dot" onclick="currentSlide(5)"></span> 
+<span class="dot" onclick="currentSlide(6)"></span>  
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="main">
+     <center> <h1>COMPUTE 2018</h1>
+      <p>Computation can have many positive influences on modern life, but these benefits are unevenly distributed, particularly in a country with as much socio-economic diversity as India. COMPUTE 2018 - An International Symposium organized by ACM India in collaboration with Chitkara University, Punjab has Computing for Better Bharat as its prime objective and will focus on following two theme areas:<br>
+   <b>Theme 1-</b>  Improving the quality of computer science engineering education (including curriculum, pedagogy and assessment) in Indian undergraduate programs.<br>
+ <b>Theme 2 - (Poster Presentation Competition)</b> - Utilizing computation to address India-specific challenges including challenges of rural India.<br><br>
+
+<b>Theme 1-</b> will be of particular interest to Computer Science Educators, and will feature:<br></p>
+<ul>
+<li>Invited talks by experts in CS curriculum design (including ACM Education Council's CC2020 efforts), CS pedagogy (with emphasis on the role of technology, including MOOCs) and CS assessments.</li>
+<li>Hands-on sessions and tutorials to familiarize faculty with emerging educational tools and resources (including 3-D printing and Augmented Reality)</li>
+</ul>
+
+
+
+
+
+
+<div class="row">
+  <div class="column">
+
+    <img src="talk.jpeg" alt="INVITED TALKS 131018 TUTORIAL" style="width:250px" onmouseover="bigimg(this)" onmouseout="normalimg(this)">
+  </div>
+  <div class="column">
+    <img src="inn.jpeg" alt="INAUGURATION" style="width:250px" onmouseover="bigimg(this)" onmouseout="normalimg(this)">
+  </div>
+  <div class="column">
+    <img src="prize.jpeg" alt="PRIZE DISTRIBUTION" style="width:250px" onmouseover="bigimg(this)" onmouseout="normalimg(this)">
+  </div>
+<div class="column">
+<img src="Se.jpeg" alt="SESSION BY AICTE" style="width:250px" onmouseover="bigimg(this)" onmouseout="normalimg(this)">
+ </div>
+<div class="column">
+<img src="campus.jpeg" alt="TOUR TO CAMPUS" style="width:250px" onmouseover="bigimg(this)" onmouseout="normalimg(this)">
+ </div>
+</div>
+
+
+<script>
+function bigimg(x){
+x.style.width="255px";
+}
+function normalimg(x){
+x.style.width="240px";
+}
+
+</script>
+
+
+
+
+<p><b>Theme 2</b> is directed toward students, research scholars, academicians who wish to present solutions to the one of the below listed problems by participating is Poster Presentation Competition to be organized during COMPUTE 2018. It is desired that participating teams should have prototype of their solution also available. Shortlisted teams will be expected to showcase their prototypes (or video of their prototypes) during the competition.</p>
+<br>
+<p><b>Topics of interest include (but are not limited to):</b></p>
+<ul>
+<li>Access technologies for persons with disabilities/children with special needs</li>
+<li>Computation for agriculture</li>
+<li>Computation for basic numeracy and literacy (including financial and digital literacy)</li>
+<li>Computation for healthcare</li>
+<li>Computation for rural services</li>
+<li>Educational content generation/curation through Computation</li>
+<li>Natural Language Processing for Indian languages</li><br>
+<center><a href="http://acm-compute.in/#">Get More Information About Compute 2018  </a></center>
+</center>
+
+
+
+</body>
+</html>
