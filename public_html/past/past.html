@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<title></title>
+	<style type="text/css">
+		/* Slideshow container */
+.slideshow-container {
+max-width: 100%;
+position: relative;
+padding:0 0 0 0;
+margin-right: 5px;
+margin-left: 0px;   
+}
+/* Hide the images by default */
+.mySlides1 {
+display: none;
+}
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+body{
+  font-family: Courier;
+  background-image: linear-gradient(to right,#243949,#517fa4);
+}
+
+.border{
+  border-radius: 30px;
+  border:5px groove red;
+}
+#slide{
+  width: 100%;
+  height: 600px;
+}
+.header{
+  line-height: 110px;
+   font-size: 50px;
+    font-family: verdana;
+    font-weight: bolder;
+}
+.bars{
+  background-color: white; 
+  border: 6px solid black; 
+  border-radius: 30px;
+}
+h1{
+  text-align: center;
+   font-family: Arial;
+}
+.content{
+      margin-right: 20%; margin-left: 20%; text-align: left;}
+      .mySlides, .mySlides2, .mySlides3, .mySlides4 {display: none;width:300px; height: 250px;
+      }
+.mySlides5,.mySlides6{
+	width:300px; height: 250px;
+}
+
+      p{
+  font-family: Trebuchet MS;
+  font-style: italic;
+  font-size: 20px;
+  color: white;
+}
+.pic{
+  border-radius: 20px;
+  border:3px groove red;
+}
+h3{
+  font-weight: bold;
+  color: skyblue;
+  font-family: verdana;
+font-size: 22px;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 100%; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+@media(max-width: 600px){
+.header{
+    
+    margin-top: 20px;
+    line-height: 2;
+    text-align: left;
+    font-size: 20px;
+  }
+  #slide{
+    height: 125px;
+  }
+  .border{
+  border-radius: 15px;
+   }
+  .bars{
+    font-size: 15px;
+    border: 3px solid black; 
+  border-radius: 15px;
+  }
+  h3{
+    font-size: 15px;
+  }
+  .mySlides,.mySlides2, .mySlides3, .mySlides4,
+  .mySlides5,.mySlides6{
+   width:100%; height:200px; 
+  }
+  p{
+    font-size: 13px;
+  }
+  .pic{
+  border-radius: 10px;
+  border:3px groove red;
+}
+ .column {
+        width: 100%;height: 100%;
+    }
+.imag{
+    width: 30%;
+    height: auto;
+  }
+  #slide{
+  	height: 180px;
+  }
+}
+	
+	</style>
+</head>
+<body><div class="header">
+<img class="imag" src="frames\images\Chitkara-ACM-Chapter-logo-new.png" style="float: left;">&nbsp;<span style="color: red;"><u>Past</u></span><span style="color: skyblue;"><u> Activities-</span></u></div>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+<!-- Full-width images with number and caption text -->
+<div class="mySlides1 fade">
+<img class="border" id="slide" src="frames\images\slider pics\s1.jpg">
+</div>
+<div class="mySlides1 fade">
+<img class="border" id="slide" src="frames\images\slider pics\s2.jpg">
+</div>
+<div class="mySlides1 fade">
+<img class="border" id="slide" src="frames\images\slider pics\s3.jpg">
+</div>
+<div class="mySlides1 fade">
+<img class="border" id="slide" src="frames\images\slider pics\s4.jpg">
+</div>
+<div class="mySlides1 fade">
+<img class="border" id="slide" src="frames\images\slider pics\s5.jpg">
+</div>
+<div class="mySlides1 fade">
+<img class="border" id="slide" src="frames\images\slider pics\s6.jpg">
+</div>
+<div class="mySlides1 fade">
+<img class="border" id="slide" src="frames\images\slider pics\s7.jpg">
+</div>
+<div class="mySlides1 fade">
+<img class="border" id="slide" src="frames\images\slider pics\s8.jpg">
+</div>
+<div class="mySlides1 fade">
+<img class="border" id="slide" src="frames\images\slider pics\s9.jpg">
+</div>
+<div class="mySlides1 fade">
+<img class="border" id="slide" src="frames\images\slider pics\s10.jpg">
+</div>
+<div class="mySlides1 fade">
+<img class="border" id="slide" src="frames\images\slider pics\s11.jpg">
+</div>
+
+</div>
+<br>
+
+<script type="text/javascript">
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+var i;
+var slides = document.getElementsByClassName("mySlides1");
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}
+slides[slideIndex-1].style.display = "block";
+setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
+<h1 class="bars"><b>
+:Activities in 2018:</b></h1>
+<h3>1)Workshop on Amazon Web Services:</h3><br>
+<div class="row">
+  <div class="column left">
+    <span class="w3-content w3-section" style="max-width:1366px">
+  <img class="mySlides pic" src="frames\images\2018 images\aws_1.jpg">
+  <img class="mySlides pic" src="frames\images\2018 images\aws_2.jpg">
+  <img class="mySlides pic" src="frames\images\2018 images\aws_3.jpg">
+</span>
+  </div>
+  <div class="column right">
+    <p>One another successful event has come to an end!!!!<br>
+ACM student chapter organised a workshop in AWS which came to an end today.<br>
+We all are heartiest thankful to MR. SHUBHAM SHARMA for his excellent inputs and dedication towards the students which made this workshop an another successful event.<br>
+We are also thankful to the student for their active participation in the event and hope that this workshop will become a great boon in their future.<br>
+Hope tou all have enjoyed the workshop and we'll get you all again in our next event which will be coming soon.</p>
+  </div>
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 4 seconds
+}
+</script>
+<h3>2)DSP Talk On WLAN and CYBER SECURITY:</h3><br>
+<div class="row">
+  <div class="column left">
+    <span class="w3-content w3-section" style="max-width:1366px">
+  <img class="mySlides2 pic" src="frames\images\2018 images\dsp_1.jpg">
+  <img class="mySlides2 pic" src="frames\images\2018 images\dsp_2.jpg">
+  <img class="mySlides2 pic" src="frames\images\2018 images\dsp_3.jpg">
+</span>
+  </div>
+  <div class="column right">
+    <p>ACM STUDENT CHAPTER organized an Expert talk on WLAN Security And CYBER SECURITY presented by Mr. Guru Raj (Young Scientist awardee for International travel Grants from ITS-SERB,DST, Government of India in December 2016).<br>
+
+Students were found very interactive with the speaker . They got great knowledge in the field of WLAN and Cyber Security. There was also a hands-on session on Cyber Security after the expert talk in which selected students get the opportunity to know how things happen in the field of Cyber Security.<br>
+
+The overall outcome of the event was excellent . All the students participant in the talk and hands-on session actively.</p>
+  </div>
+</div>
+<script>
+var myIndex = 0;
+carousel1();
+
+function carousel1() {
+    var i;
+    var x = document.getElementsByClassName("mySlides2");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel1, 2000); // Change image every 4 seconds
+}
+</script>
+<h3>3)Clash Of Geeks:</h3><br>
+<div class="row">
+  <div class="column left">
+    <span class="w3-content w3-section" style="max-width:1366px">
+  <img class="mySlides3 pic" src="frames\images\2018 images\coc_1.jpeg">
+  <img class="mySlides3 pic" src="frames\images\2018 images\coc_2.jpg">
+  <img class="mySlides3 pic" src="frames\images\2018 images\coc_3.jpg">
+</span>
+  </div>
+  <div class="column right">
+    <p>Clash of Geeks organised by ACM chapter to explore the potential of students in programming. There were two rounds for this event , first was screening round in which 50 teams were selected for final round based on the passing criteria and in the final round students were given compex problems and they have to  solve the programming questions in C/C++ environment on hackerrank. Students took their time and submit their solutions. From the selected 50 teams two teams were declared as the winners of this event first and second respectively.<br><br>
+
+RESULTS:<br><br>
+
+Ist prize -   GUNEET GARG and AYUSH SINGLA (4th sem)<br>
+
+2nd prize -    VIPUL POPLI  and KUNAL PAHWA (4th sem)</p>
+  </div>
+</div>
+<script>
+var myIndex = 0;
+carousel3();
+
+function carousel3() {
+    var i;
+    var x = document.getElementsByClassName("mySlides3");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel3, 2000); // Change image every 4 seconds
+}
+</script>
+<h3>4)Industrial Visit to NITTTR,Chandigarh:</h3><br>
+<div class="row">
+  <div class="column left">
+    <span class="w3-content w3-section" style="max-width:1366px">
+  <img class="mySlides4 pic" src="frames\images\2018 images\indu_1.jpg">
+  <img class="mySlides4 pic" src="frames\images\2018 images\indu_2.jpg">
+</span>
+  </div>
+  <div class="column right">
+    <p>IE(I) Student Chapters, ACM, IEEE Student Chapter of Department of Computer Science and Engineering organized an industrial visit to National Institute of Technical Teachers Training & Research(NITTTR), Chandigarh on 29 March 2018. Three faculty members of department and 37 students of ACM, IE(I) and IEEE visited the site.<br><br>
+
+NITTTR had hosted an international conference with delegates from all over the world. The Chief Guest for the conference was Dr A.R Rao, Director NIPER Mohali. Dr BiplabSikdar (National University of Singapore, Singapore) , Dr. MD Mamun (UniversitiKebangsaan Malaysia, Malaysia) and Prof S.S. Pattnaik (Director-NITTTR, Chandigarh) were some of the delegates that attended the conference. There were four different talks on Future of Technology and Cyber Security</p>
+  </div>
+</div>
+<script>
+var myIndex = 0;
+carousel4();
+
+function carousel4() {
+    var i;
+    var x = document.getElementsByClassName("mySlides4");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel4, 2000); // Change image every 4 seconds
+}
+</script>
+
+<h1 class="bars"><b>
+:Activities in 2017:</b></h1>
+
+<h3>1)Acm-W Hackathon:</h3><br>
+<div class="row">
+  <div class="column left">
+    <span class="w3-content w3-section" style="max-width:1366px">
+  <img class="mySlides5 pic" src="frames\images\2017 images\hack.jpg">
+</span>
+  </div>
+  <div class="column right">
+    <p style="text-transform: lowercase;">ACCORDING TO THE FAMOUS SAYING OF MRS. KIRTHIGA REDDY, HEAD, FACEBOOK INDIA "I STRONGLY BELIEVE THAT THE FIRST STEP AND THE MOST IMPORTANT TOOL TOWARDS WOMEN EMPOWERMENT IS EDUCATION. THE RIGHT EDUCATION WILL ENSURE THAT WOMEN ARE MORE COMPETENT AND CONFIDENT IN TAKING UP BIGGER CHALLENGES AND RAISING THE BAR IN ANY FIELD". TO PROMOTE WOMEN IN ENGINEERING, ACM STUDENT CHAPTER, DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING ORGANIZED A 24-HOUR NATIONAL LEVEL HACKATHON IN COLLABORATION WITH ACM-W AND ORACLE ACADEMY ON 2ND -3RD OCT, 2017 FOR GIRL STUDENTS.<br>
+3RD OF OCTOBER MARKED THE END OF THE HACKATHON. THIS JOURNEY OF THE HACKATHON STARTED WITH THE PARTICIPATION OF 308 ENTHUSIASTIC AND TECH-SAVVY TEAMS FROM ALL OVER INDIA WITH THE THEME OF DIGITAL INDIA. A TEAM OF 52 HIGHLY PROFESSIONAL MEMBERS FROM ACM INDIA, CHITKARA UNIVERSITY, AND ORACLE ACADEMY WAS FORMED TO REVIEW THE IDEAS AND SELECT THE BEST 20 TEAMS OUT OF IT. THE SELECTED 20 TEAMS WERE THEN PROMOTED TO THE NEXT ROUND WHICH WAS HELD ON 9TH SEPTEMBER 2017. AFTER IN-DEPTH DISCUSSIONS WITH ALL THE 20 TEAMS, 10 TEAMS WERE FILTERED WERE HENCE PROMOTED TO THE FINAL ROUND. THE TOP 10 TEAMS AND ONE WILD CARD ENTRY ACCOMPANIED BY THEIR RESPECTIVE MENTORS WERE INVITED TO CHITKARA UNIVERSITY ON 2ND OCTOBER 2017 AND WERE GIVEN 24 HOURS TO SUCCESSFULLY RUN THEIR APPLICATION AND SHOWCASE THEIR IDEA TO THE JUDGING PANEL. DR. MADHU CHITKRA, HONORABLE VICE-CHANCELLOR OF CHITKARA UNIVERSITY ALSO ADDRESSED THE STUDENTS AND GAVE PRIZES TO THE TOP THREE WINNERS. TOP THREE TEAMS GOT 24000/, 15000/ AND 12000/ RESPECTIVELY AS A PRIZE MONEY AND WERE GIVEN CHITKARA UNIVERSITY GOODIES.</p>
+  </div>
+</div>
+<h3>2)CS Pathshala:</h3><br>
+<div class="row">
+  <div class="column left">
+    <span class="w3-content w3-section" style="max-width:1366px">
+  <img class="mySlides6 pic" src="frames\images\2017 images\cspatshala.png">
+</span>
+  </div>
+  <div class="column right">
+    <p style="text-transform: lowercase;">ACM STUDENT CHAPTER, CHITKARA UNIVERSITY, IN COLLABORATION WITH ACM INDIA AND CSPATHSHALA, ORGANIZED A ONE-DAY WORKSHOP ON THE TOPIC "BRINGING COMPUTATIONAL THINKING TO SCHOOL" , ON 15 JULY, 2017 AT CHITKARA INTERNATIONAL SCHOOL, SECTOR-25,CHANDIGARH. THE MAIN GOAL OF THIS WORKSHOP WAS TO IMPART PEDAGOGICAL AS WELL AS CONTENT TRAINING TO TEACHERS. INTERACTING WITH 165 DELEGATES IN THE WORKSHOP WAS MS. SONIA GARCHA, CSPATHSHALA VOLUNTEER, PROGRAM ASSOCIATE - CSR, DEVELOPMENT SUPPORT TEAM ALONG-WITH GUEST SPEAKER MR. MADHAVAN MUKUND, PRESIDENT OF ACM INDIA AND PROFESSOR AND DEAN OF STUDIES, CHENNAI MATHEMATICAL INSTITUTE, CHENNAI. THIS WORKSHOP IMPARTED TRAINING TO THE TEACHERS ON PROBLEM SOLVING AND COMPUTATIONAL THINKING, WHICH ENABLED THEM TO LEARN MORE ABOUT TOPICS SUCH AS, DECOMPOSITION, PATTERNS, ABSTRACTION, ALGORITHMS, ANALYSIS AND PROGRAMMING WITH DAY TO DAY EXAMPLES. ALSO, TEACHERS WERE MADE FAMILIAR WITH THE CSPATHSHALA TRAINING AIDS, AND WERE ALSO ENGAGED IN INTERESTING ACTIVITIES ON THE ABOVE MENTIONED TOPICS.</p>
+  </div>
+</div>
+<h3>3)CS Curricula Workshop:</h3><br>
+<div class="row">
+  
+    <p style="text-transform: lowercase;">ACM STUDENT CHAPTER ORGANIZED A CS CURRICULA WORKSHOP ON 15TH JULY, 2017, ONE OF THE ACTIVITIES OF ACM-IEEE CS2013 COMPUTING CURRICULA MODEL DEVELOPED BY THE ACM AND IEEE GROUP IN 2013. THIS ONE-DAY WORKSHOP PRESENTED THE CS2013 AND ITS INDIA SPECIFIC ISSUES FOR A SAMPLE COURSE, WHICH HELPED IN MAKING THE CURRICULUM MORE RELEVANT TO THE INDIAN CONTEXT. THE SESSION WITNESSED A TURNAROUND OF ABOUT 45 PARTICIPANTS, COMPRISING OF FACULTY MEMBERS OF CHITKARA UNIVERSITY PUNJAB, CHITKARA UNIVERSITY HIMACHAL PRADESH AND CURIN DEPARTMENT.<br>
+THE SPEAKER ON THE OCCASION WERE DR. MADHAVAN MUKUND, DEAN OF STUDIES AND A PROFESSOR OF COMPUTER SCIENCE AT CHENNAI MATHEMATICAL INSTITUTE, ALSO THE PRESIDENT AND MEMBER OF INDIAN ASSOCIATION FOR RESEARCH IN COMPUTING SCIENCE (IARCS) AND THE PRESIDENT OF ASSOCIATION FOR COMPUTING MACHINERY INDIA COUNCIL AND DR. ABHIJIT VICHARE, FELLOW AT PERSISTENT SYSTEMS LTD AND MEMBER OF ACM INDIA COUNCIL. A HIGHLY INTERACTIVE SESSION ENDS UP WITH AN ACTIVE LEVEL OF THE FACULTY
+MEMBERS WITH REAL LIFE EXAMPLES.</p>
+  
+</div>
+<h3>4)Infosys - IT Park Chandigarh:</h3><br>
+<div class="row">
+  <div class="column left">
+    <span class="w3-content w3-section" style="max-width:1366px">
+  <img class="mySlides6 pic" src="frames\images\2017 images\info.png">
+</span>
+  </div>
+  <div class="column right">
+    <p style="text-transform: lowercase;">CHITKARA ACM STUDENT CHAPTER ORGANIZED AN INDUSTRIAL VISIT TO INFOSYS CHANDIGARH. 14 MEMBERS OF ACM CHITKARA VISITED THE SITE. THE EVENT STARTED WITH THE PRESENTATION GIVEN BY MR. KANWARPREET SINGH, WHO DISCUSSED SOFTWARE TESTING SKILLS. AFTERWARDS, A VERY INTERACTIVE Q&A SESSION WAS HELD REGARDING THE NEW TRENDS IN INDUSTRIES AND NEW FIELDS IN TECHNOLOGY. AT LAST, THE LUNCH WAS FOLLOWED BY THE GUIDED TOUR OF THE COMPANY.</p>
+  </div>
+</div>
+<h3>5)Aarda:</h3><br>
+<div class="row">
+  <div class="column left">
+    <span class="w3-content w3-section" style="max-width:1366px">
+  <img class="mySlides6 pic" src="frames\images\2017 images\FullSizeRender_7.jpg">
+</span>
+  </div>
+  <div class="column right">
+    <p style="text-transform: lowercase;">ACM STUDENT CHAPTER CHITKARA UNIVERSITY ORGANIZED AN EVENT AARDA IN WHICH SECOND YEAR STUDENTS OF BE CSE DISPLAYED THEIR INTEGRATED PROJECTS IN DIFFERENT CATEGORIES. THE EVENT STARTED WITH THE ARRIVAL OF HIGHLY REPUTED EXTERNALS FROM VARIOUS DOMAINS RANGING FROM ACADEMICIANS TO CORPORATE WORLD. VENUESWERE EMBELLISHED WITH POSTERPRESENTATIONS. THE STUDENTS SHOWCASED THEIRPROJECTS. THE EVALUATIONS OF STUDENTS WERE HIGHLY APPRECIATED BY THE EXAMINERS. THE EVENT REACHED ITS ZENITH WITH THE INVOLVEMENT OF STUDENTS FROM SECTIONS OF CSE 2ND YEAR (E TO H). THE STUDENTS RECEIVED ACCOLADES WITH EMINENT AWARD, STAR AWARD AND CONSOLATION PRIZE.<br>
+May 12, 2017</p>
+  </div>
+</div>
+<h3>6)Expert Talk -DR. Amit Nanavati:</h3><br>
+<div class="row">
+  <div class="column left">
+    <span class="w3-content w3-section" style="max-width:1366px">
+  <img class="mySlides6 pic" src="frames\images\2017 images\S59A9021.jpg">
+</span>
+  </div>
+  <div class="column right">
+    <p style="text-transform: lowercase;">ACM STUDENT CHAPTER, CHITKARA UNIVERSITY ORGANIZED A DSP (DISTINGUISHED SPEAKER PROGRAM) ON THE TOPIC "WHAT DOES ENGINEERING MEAN TO A STUDENT ?" ON 15TH MARCH, 2017 . THE SESSION WITNESSED A TURNAROUND OF ABOUT 200 PARTICIPANTS, COMPRISING OF STUDENTS FROM CSE AND M.TECH DEPARTMENT AND FACULTY MEMBERS FROM THE RESEARCH & CSE DEPARTMENT.</p>
+  </div>
+</div>
+<h3>7)Codathon:</h3><br>
+<div class="row">
+  <div class="column left">
+    <span class="w3-content w3-section" style="max-width:1366px">
+  <img class="mySlides6 pic" src="frames\images\2017 images\IMG-20170320-WA0012.jpg">
+</span>
+  </div>
+  <div class="column right">
+   <p style="text-transform: lowercase;">ACM STUDENT CHAPTER ,CHITKARA UNIVERSITY IN COLLABORATION WITH CCET ORGANIZED THE EVENT "CODATHON" ON 23RD MARCH,2017 . APPROXIMATELY 33TEAMS (EACH TEAM CONSISTING MINIMAL OF 1 MEMBER TO UTMOST OF 4 MEMBERS) PARTICIPATED IN THE EVENT. IT WAS A CODING COMPETITION WHERE PARTICIPANTS
+WERE CHALLENGED TO ADDUCE THEIR CODING SKILLS.THE CONTEST WAS ON PLATFORM
+NAMED "HACKEREARTH". THE PARTICIPANTS WERE GIVEN FREEDOM TO CHOOSE ANY
+CODING LANGUAGE. THERE WERE TOTAL OF 18 BRITTLE QUESTIONS WHICH WERE TO BE
+JUSTIFIED IN THE GIVEN TIME PERIOD OF 2 HOURS. THE CONTEST WAS CRUNCHY AND STUDENTS PROVED THEIR CODING SKILLS WITH GREAT ZEAL.</p>
+  </div>
+</div>
+<h3>8)Alumni Talk - MR. Prateek Garg:</h3><br>
+<div class="row">
+  <div class="column left">
+    <span class="w3-content w3-section" style="max-width:1366px">
+  <img class="mySlides6 pic" src="frames\images\2017 images\BeFunky-Collage1.jpg">
+</span>
+  </div>
+  <div class="column right">
+  <p style="text-transform: lowercase;">ACM STUDENT CHAPTER (DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING) HAS INVITED MR. CHANDRA SHEKHAR (CeO OF ACM INDIA) FOR A VISIT TO OUR CAMPUS (CHITKARA UNIVERSITY PUNJAB) ON 1ST APRIL, 2017. DURING THE CAMPUS VISIT, HE ATTENDED A MEETING WITH DR. ARCHANA MATRI, DR. RAJNESH SHARMA AND MS. MEENU KHURANA. DURING THE MEETING, HE DISCUSSED VARIOUS ACM INDIA EVENTS AND ALSO SUGGESTED FEW OF THEM TO BE CONDUCTED BY CHITKARA UNIVERSITY. CS-PATHSHALA, SUMMER SCHOOL WORKSHOP, ACM-W AND ESP WERE THE PIONEER EVENT TO BE HOSTED BY CHITKARA UNIVERSITY..</p>
+  </div>
+</div>
+<h3>9)Technovation:</h3><br>
+<div class="row">
+  <div class="column left">
+    <span class="w3-content w3-section" style="max-width:1366px">
+  <img class="mySlides6 pic" src="frames\images\2017 images\acm1.png">
+</span>
+  </div>
+  <div class="column right">
+   <p style="text-transform: lowercase;">ACM STUDENT CHAPTER CHITKARA UNIVERSITY ORGANIZED AN EVENT TECHNOVATION IN WHICH THIRD YEAR STUDENTS OF BE CSE DISPLAYED THEIR INTEGRATED PROJECTS IN DIFFERENT CATEGORIES. THE EVENT STARTED WITH THE ARRIVAL OF HIGHLY REPUTED EXTERNALS FROM VARIOUS DOMAINS RANGING FROM ACADEMICIANS TO CORPORATE WORLD. VENUES WERE EMBELLISHED WITH POSTER PRESENTATIONS. THE STUDENTS SHOWCASED THEIR PROJECTS. THE EVALUATIONS OF STUDENTS WERE HIGHLY APPRECIATED BY THE EXAMINERS.</p>
+  </div>
+</div>
+<div style="background-color: black;color: white;font-family: verdana;"><center>
+&nbsp;<br>
+Copyright © 2018 ACM CHAPTER. All Rights Reserved.<br><br>
+Designed By -<a href="https://www.linkedin.com/in/akash-kumar-818419160/" style="text-decoration: none"> Akash Kumar (ACM Web Team) </a><br>
+&nbsp;<br>
+</center></div>
+</body>
+</html>
