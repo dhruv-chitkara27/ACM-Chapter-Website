@@ -1,228 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
 body{
-   margin: 0px;
-    padding: 0px;
+
+background-color: ;
+
 }
-#pw{
-    background-image: url(../images/front3.png);
-    min-height: 900px;
-    width: 100%;
-    background-size: auto;
-    background-attachment: fixed;
-    background-position: center;
+
+*{
+  font-family: 'Raleway', sans-serif;
+}
+
+#effect {
+  width: 100%;
+  height: 100vh;
+background: url('../images/particlebg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+canvas.particles-js-canvas-el {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.inparticle{
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  transform: translate(-50%,-50%);
+font-family: cursive;
+font-size: 7em;
+}
+
+
+.main-wrapper{
+    padding: 30px;
+}
+.main-head{
+    margin: 0px;
+}
+.main-head h1{
+    color: darkorange;
+    font-size: 4.5em;
+    font-family: 'Prompt', sans-serif;
+    letter-spacing: 0.2rem;
+}
+.main-wrapper hr {
+border-bottom: 1px solid rgba(0,0,0,0.8);
+}
+center hr {
+border-bottom: 1px solid rgba(0,0,0,0.8);
+}
+
+        .writeup{
+            font-size: 1.8em;
+            font-weight: 50;
+            font-family: cursive;
+            color: 	black;
+            margin: 30px;
+        }
+        .im{
+            display: flex;
+            justify-content: space-around;
+        }
+       h2, p{
+            margin: 30px;
+            font-size: 1.2em;
+        }
+.social{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+        height: 16em;
+        background: url('../images/paralax.png');
+        background-attachment: fixed;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
-.top{
-    margin: 0px;
-    height: 70px;
-    overflow: hidden;
-    background-color: rgba(31,101,166,0.7);
-}  
 
-.top .left{
-    list-style-type: none;
-    float: right;
-    margin-top: 25px;
-    margin-right: 50px;
+.title{
+    font-size: 4em;
 }
-.ho{
-    padding-top: 8px;
+.o{
+    position: relative;
 }
-.top li a{
-      font-family: 'Nunito', sans-serif;
-    text-decoration: none;
-    color: rgba(255,255,255,0.8);
-    font-size: 20px;
-    padding: 8px;
+.o image{
+    display: block;
 }
-.dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li.dropdown {
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
+.overlay{
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+    height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  background-color: rgba(25, 25, 112,0.5);
 }
-
-.dropdown-content a {
-    background-color: #1f65a5;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #1f65a5}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-ul{
-    list-style-type: none;
-}
-.logo{
-    margin-top: 5px;
-    margin-left: 60px;
-    float: left;
-    list-style-type: none;
-}
-.top li a:hover{
-    color: rgba(255,255,255,1);
-}
-#content{
-        background-image: url(../images/bg.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 70px;
-   min-height: 100%;
-    margin: 0px;
-    
-}
-
-.right{
-    width: 450px;
-    display: inline-block;
-}
-.right h1{
+.overlay > div{
     text-align: center;
-font-family: 'Nunito', sans-serif;
-font-size: 40px;
+}
+.overlay:hover{
+    opacity: 1;
+}
+.text{
     color: white;
-    opacity: 0.8;
+    font-weight: bold;
 }
-.right img{
-    height: 500px;
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#compute h1{
-font-family: 'Nunito', sans-serif;
-font-size: 60px;
-    color: rgba(255,255,255,0.8);
-    border-bottom: 2px solid rgba(255,255,255,0.8);
-    padding: 0px;
-    margin-left: 45px;
-    float: left;
+
+.contain{
+padding-left: 30px;
+    padding-top: 30px;
 }
-#compute p{
-    padding-left:80px;
-    padding-right:80px;
-    font-size: 25px;
-    font-family: 'Mali', cursive;
-    color: rgba(0,0,0,0.7);
-    margin: 0px;
-}
-#compute h2{
-    font-family: 'Nunito', sans-serif;
-font-size: 27px;
-    color: rgba(255,255,255,0.8);
-    padding: 0px;
-    margin-left: 45px;
-    margin-bottom: 0px;
-}
-#compute ul{
-     padding-left:80px;
-    padding-right:80px;
-    font-size: 25px;
-    font-family: 'Mali', cursive;
-    color: rgba(0,0,0,0.7);
-    margin: 0px;
-}
-.foot{
-    height: 50px;
-    color: rgb(255,255,255,0.7);
-    background-color: rgba(0,0,0,0.9);
-}
-h4{
-     font-family: 'Nunito', sans-serif;
-    margin: 0px;
-    text-align: center;
-    padding-top: 20px;
-}
-@media only screen and (max-width:415px){
-    #pw
-    {
-        width: 100%;
-        background-size:100% 100%;
-    }
-.top{
-    margin: 0px;
-    height: 50px;
-    overflow: hidden;
-    background-color: rgba(31,101,166,0.7);
-}  
-.top .left{
-    list-style-type: none;
-    float: right;
-    margin-top: 22px;
-    margin-right: 20px;
-}
-    .logo img{
-        width: 50px;
-    }
-.top li a{
-    font-size: 15px;
-    padding: 6px;
-}
-    .logo{
-    margin-top: 22px;
-    margin-left: 20px;
-}
-#content{
-    background-size: 100% 100%;    
-}
-.right{
-    width: 250px;
-    display: inline-block;
-}
-.right h1{
-font-size: 20px;
-    color: white;
-    opacity: 0.8;
-}
-.right img{
+
+.more{
     height: 300px;
 }
-#compute h1{
-font-size: 20px;
-  margin-left: 30px;
+
+.type{
+    font-size: 5em;
+    font-weight: bold;
+    font-family:cursive;
+    letter-spacing: 4px;
+    color: #ff4b2b;
 }
-    #compute img{
-        width: 100%;
-    }
-#compute p{
-    padding-left:10px;
-    padding-right:10px;
-    font-size: 15px;
-}
-#compute h2{
-font-size: 18px;
-    margin-left: 10px;
-    margin-bottom: 0px;
-}
-#compute ul{
-     padding-left:20px;
-    padding-right:20px;
-    font-size: 15px;
-}
-.foot{
-    height: 30px;
-    color: rgb(255,255,255,0.7);
-    background-color: rgba(0,0,0,0.9);
-}
-h4{
-    font-size: 15px;
-    padding-top: 5px;
-}
-}
+
+
