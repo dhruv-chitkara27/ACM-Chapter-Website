@@ -7,9 +7,7 @@ window.onload = function () {
 } */
 
 $(function(){
-    /* ========================================================================= */
-    /*  Menu item highlighting
-    /* ========================================================================= */
+
 
     jQuery(window).scroll(function () {
         if (jQuery(window).scrollTop() > 400) {
@@ -96,7 +94,7 @@ $(function(){
 /* ---------------------------------------------------------------------- */
 /*      Progress Bars
 /* ---------------------------------------------------------------------- */
-
+/*
 initProgress('.progress');
 
 function initProgress(el){
@@ -107,18 +105,17 @@ function initProgress(el){
 }
 
 
-            
+
 function progress(percent, $element) {
     var progressBarWidth = 0;
-    
+
     (function myLoop (i,max) {
         progressBarWidth = i * $element.width() / 100;
-        setTimeout(function () {   
+        setTimeout(function () {
         $element.find('div').find('small').html(i+'%');
         $element.find('div').width(progressBarWidth);
-        if (++i<=max) myLoop(i,max);     
+        if (++i<=max) myLoop(i,max);
         }, 10)
-    })(0,percent);  
-}   
-
-
+    })(0,percent);
+}
+*/
